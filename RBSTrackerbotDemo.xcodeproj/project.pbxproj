@@ -16,6 +16,11 @@
 		B1224D571D9D358E007DF1CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1224D551D9D358E007DF1CE /* LaunchScreen.storyboard */; };
 		B1224D621D9D358E007DF1CE /* RBSTrackerbotDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B1224D611D9D358E007DF1CE /* RBSTrackerbotDemoTests.m */; };
 		B1224D6D1D9D358E007DF1CE /* RBSTrackerbotDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B1224D6C1D9D358E007DF1CE /* RBSTrackerbotDemoUITests.m */; };
+		B1224D7D1D9D35DF007DF1CE /* RBSTrackedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1224D7C1D9D35DF007DF1CE /* RBSTrackedViewController.m */; };
+		B1224D801D9D3628007DF1CE /* RBSTrackedView.m in Sources */ = {isa = PBXBuildFile; fileRef = B1224D7F1D9D3628007DF1CE /* RBSTrackedView.m */; };
+		B1224D841D9D367C007DF1CE /* RBSTrackerbot.m in Sources */ = {isa = PBXBuildFile; fileRef = B1224D831D9D367C007DF1CE /* RBSTrackerbot.m */; };
+		B1224D881D9D36DE007DF1CE /* RBSTrackerItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B1224D871D9D36DE007DF1CE /* RBSTrackerItem.m */; };
+		B1224D8B1D9D36FF007DF1CE /* RBSTrackReporter.m in Sources */ = {isa = PBXBuildFile; fileRef = B1224D8A1D9D36FF007DF1CE /* RBSTrackReporter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +59,18 @@
 		B1224D681D9D358E007DF1CE /* RBSTrackerbotDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RBSTrackerbotDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1224D6C1D9D358E007DF1CE /* RBSTrackerbotDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RBSTrackerbotDemoUITests.m; sourceTree = "<group>"; };
 		B1224D6E1D9D358E007DF1CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1224D7B1D9D35DF007DF1CE /* RBSTrackedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBSTrackedViewController.h; sourceTree = "<group>"; };
+		B1224D7C1D9D35DF007DF1CE /* RBSTrackedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBSTrackedViewController.m; sourceTree = "<group>"; };
+		B1224D7E1D9D3628007DF1CE /* RBSTrackedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBSTrackedView.h; sourceTree = "<group>"; };
+		B1224D7F1D9D3628007DF1CE /* RBSTrackedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBSTrackedView.m; sourceTree = "<group>"; };
+		B1224D811D9D364F007DF1CE /* RBSTrackedView+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RBSTrackedView+Private.h"; sourceTree = "<group>"; };
+		B1224D831D9D367C007DF1CE /* RBSTrackerbot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBSTrackerbot.m; sourceTree = "<group>"; };
+		B1224D851D9D36C5007DF1CE /* RBSTrackerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBSTrackerDelegate.h; sourceTree = "<group>"; };
+		B1224D861D9D36DE007DF1CE /* RBSTrackerItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBSTrackerItem.h; sourceTree = "<group>"; };
+		B1224D871D9D36DE007DF1CE /* RBSTrackerItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBSTrackerItem.m; sourceTree = "<group>"; };
+		B1224D891D9D36FF007DF1CE /* RBSTrackReporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBSTrackReporter.h; sourceTree = "<group>"; };
+		B1224D8A1D9D36FF007DF1CE /* RBSTrackReporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBSTrackReporter.m; sourceTree = "<group>"; };
+		B1224D8C1D9D3723007DF1CE /* RBSTrackSnifferDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBSTrackSnifferDataSource.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +121,7 @@
 		B1224D431D9D358E007DF1CE /* RBSTrackerbotDemo */ = {
 			isa = PBXGroup;
 			children = (
+				B1224D7A1D9D35A3007DF1CE /* RBSTrackerbot */,
 				B1224D471D9D358E007DF1CE /* AppDelegate.h */,
 				B1224D481D9D358E007DF1CE /* AppDelegate.m */,
 				B1224D4A1D9D358E007DF1CE /* FirstViewController.h */,
@@ -143,6 +161,25 @@
 				B1224D6E1D9D358E007DF1CE /* Info.plist */,
 			);
 			path = RBSTrackerbotDemoUITests;
+			sourceTree = "<group>";
+		};
+		B1224D7A1D9D35A3007DF1CE /* RBSTrackerbot */ = {
+			isa = PBXGroup;
+			children = (
+				B1224D7E1D9D3628007DF1CE /* RBSTrackedView.h */,
+				B1224D7F1D9D3628007DF1CE /* RBSTrackedView.m */,
+				B1224D811D9D364F007DF1CE /* RBSTrackedView+Private.h */,
+				B1224D7B1D9D35DF007DF1CE /* RBSTrackedViewController.h */,
+				B1224D7C1D9D35DF007DF1CE /* RBSTrackedViewController.m */,
+				B1224D831D9D367C007DF1CE /* RBSTrackerbot.m */,
+				B1224D851D9D36C5007DF1CE /* RBSTrackerDelegate.h */,
+				B1224D861D9D36DE007DF1CE /* RBSTrackerItem.h */,
+				B1224D871D9D36DE007DF1CE /* RBSTrackerItem.m */,
+				B1224D891D9D36FF007DF1CE /* RBSTrackReporter.h */,
+				B1224D8A1D9D36FF007DF1CE /* RBSTrackReporter.m */,
+				B1224D8C1D9D3723007DF1CE /* RBSTrackSnifferDataSource.h */,
+			);
+			path = RBSTrackerbot;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +244,7 @@
 		B1224D391D9D358E007DF1CE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = RBS;
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = RbBtSn0w;
 				TargetAttributes = {
@@ -278,7 +316,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1224D7D1D9D35DF007DF1CE /* RBSTrackedViewController.m in Sources */,
+				B1224D801D9D3628007DF1CE /* RBSTrackedView.m in Sources */,
+				B1224D841D9D367C007DF1CE /* RBSTrackerbot.m in Sources */,
+				B1224D8B1D9D36FF007DF1CE /* RBSTrackReporter.m in Sources */,
 				B1224D4F1D9D358E007DF1CE /* SecondViewController.m in Sources */,
+				B1224D881D9D36DE007DF1CE /* RBSTrackerItem.m in Sources */,
 				B1224D491D9D358E007DF1CE /* AppDelegate.m in Sources */,
 				B1224D4C1D9D358E007DF1CE /* FirstViewController.m in Sources */,
 				B1224D461D9D358E007DF1CE /* main.m in Sources */,
